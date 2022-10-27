@@ -1,0 +1,13 @@
+version: '12-alpine'
+
+services:
+
+  db:
+    image: postgres:12-alpine
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: 9mREsvXDs9Gk89Ef
+      POSTGRES_USER: app
+      POSTGRES_DB: app
